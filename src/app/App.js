@@ -13,8 +13,8 @@ function App() {
       <NavBar />
       <h1>App</h1>
       <Switch>
-      <Route path='/posts:postId?' render={(props)=>(<Posts {...props}/>)}/>
-      <Route path='/dashboard' component={Dashboard}/>
+      <Route path='/posts/:postId?' render={(props)=>(<Posts {...props}/>)}/>
+      <Route path="/dashboard" component={Dashboard} />
       <Route path='/login' component={Login}/>
       <Route path='/'  component={Home}/>
       <Route path='/404'  component={NotFound}/>
